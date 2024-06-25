@@ -16,8 +16,8 @@ const Home = () => {
         Your browser does not support the video tag.
       </video>
       <div className="content-left">
-        <h1>Lorem ipsum dolor sit</h1>
-        <p>
+        <h1>Lorem ipsum dolor</h1>
+        <p >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed accumsan
           nunc eget tortor pulvinar, sit amet venenatis nisi scelerisque.
           Integer nec ex ut arcu fermentum laoreet Lorem ipsum dolor sit amet,

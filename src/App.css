@@ -43,39 +43,49 @@ body {
 .content-left {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Alinea los elementos horizontalmente al centro */
-  text-align: center; /* Alinea el texto horizontalmente al centro */
+  align-items: center;
+  text-align: center; 
 }
 
 .content-left h1 {
-  font-size: 4rem;
+  font-size: 5rem;
   margin-bottom: 20px;
+  text-align: justify; /* Centrar el texto */
+  letter-spacing: -1px; /* Reducir el espaciado entre letras */
 }
 
-.content-left p {
-  font-size: 1.2rem;
+.content-left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinear elementos al inicio (izquierda) */
+  text-align: justify;
+  padding-left: 50px;
 }
 
 .icon-box {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-top: 10px;
+  justify-content: flex-start; /* Alinear a la izquierda */
+  margin-top: 40px;
   border: 1px solid #ccc;
   border-radius: 30px;
-  padding-right: 20px;
-  background-color: #ccc; 
-  color: #000000; 
-  cursor: pointer; 
-  outline: none; 
-  border: none; 
-  font-size: 1.2rem; 
+  background-color: #ccc;
+  color: #000000;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-size: 1.2rem;
+  width: 30%; /* Ocupar todo el ancho disponible */
+  max-width: 300px; /* Establecer un ancho máximo */
 }
 
 .icon-box img {
-  width: 90px; 
+  width: 90px;
   height: 60px;
 }
+
+
+
 
 .content-right {
   display: flex;
