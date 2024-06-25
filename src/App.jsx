@@ -1,9 +1,15 @@
 // src/App.jsx
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Nav from './components/Nav'
+import Nav from './components/Nav';
 import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import WhoWeAre from './pages/WhoWeAre';
+import Services from './pages/Services';
+import Portfolio from './pages/Portfolio';
+import News from './pages/News';
+import WorkWithUs from './pages/WorkWithUs';
+import FAQ from './pages/FAQ';
 import './App.css';
 
 function App() {
@@ -15,6 +21,12 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/who-we-are" element={<WhoWeAre />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/news" element={<News />} />
+          <Route path="/work-with-us" element={<WorkWithUs />} />
+          <Route path="/faq" element={<FAQ />} />
         </Routes>
       </div>
     </Router>
@@ -22,3 +34,4 @@ function App() {
 }
 
 export default App;
+
