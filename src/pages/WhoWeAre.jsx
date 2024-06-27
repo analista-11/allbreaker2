@@ -1,14 +1,42 @@
-// src/pages/WhoWeAre/WhoWeAre.js
-import React from 'react';
+import React, { useEffect } from 'react';
 import './WhoWeAre.css';
 import autorizacionLogo from '../assets/autorizacionLogo.png';
 import backgroundVideo from '../assets/videoSomos-1.mp4';
 import backgroundVideo1 from '../assets/videoSomos-2.mp4';
 import backgroundVideo2 from '../assets/videoSomos-3.mp4';
+import img1 from '../assets/logos/logo-1.png';
+import img2 from '../assets/logos/logo-2.png';
+import img3 from '../assets/logos/logo-3.png';
+import img4 from '../assets/logos/logo-4.png';
+import img5 from '../assets/logos/logo-5.png';
+import img6 from '../assets/logos/logo-6.png';
+import img7 from '../assets/logos/logo-7.png';
+import img8 from '../assets/logos/logo-8.png';
+import img9 from '../assets/logos/logo-9.png';
+import img10 from '../assets/logos/logo-10.png';
+import img11 from '../assets/logos/logo-11.png';
+import img12 from '../assets/logos/logo-12.png';
+import img13 from '../assets/logos/logo-13.png';
+import img14 from '../assets/logos/logo-14.png';
 
 const WhoWeAre = () => {
+  useEffect(() => {
+    const duplicateSlides = (slideTrackClass, slideClass) => {
+      const slideTrack = document.querySelector(slideTrackClass);
+      const slides = Array.from(document.querySelectorAll(slideClass));
+      
+      slides.forEach(slide => {
+        const clone = slide.cloneNode(true);
+        slideTrack.appendChild(clone);
+      });
+    };
+
+    duplicateSlides('.slide-track-one', '.slide-one');
+    duplicateSlides('.slide-track-two', '.slide-two');
+  }, []);
+  
   return (
-    <div className="page-container"> {/* Contenedor general */}
+    <div className="page-container">
       <div className="who-we-are__container">
         <video className="who-we-are__background-video" autoPlay loop muted>
           <source src={backgroundVideo} type="video/mp4" />
@@ -27,7 +55,6 @@ const WhoWeAre = () => {
           </div>
         </div>
       </div>
-      {/* ------------------------------------------------------------------------------------------ */}
       <div className="who-we-are__subcontainer">
         <div className="who-we-are__subcontainer-right">
           <video className="who-we-are__subcontainer-video" autoPlay loop muted>
@@ -42,7 +69,6 @@ const WhoWeAre = () => {
           </p>
         </div>
       </div>
-      {/* --------------------------------------------------------------------------------------- */}
       <div className="custom-subcontainer">
         <div className="custom-subcontainer-left">
           <h2 className="custom-subcontainer-title">Nuestro Compromiso</h2>
@@ -61,7 +87,6 @@ const WhoWeAre = () => {
           </video>
         </div>
       </div>
-      {/* --------------------------------------------------------------------------------------- */}
       <div className="new-container">
         <div className="new-container-content">
           <h2 className="new-container-title">Título del Contenedor</h2>
@@ -70,34 +95,57 @@ const WhoWeAre = () => {
           </p>
         </div>
       </div>
-      {/* --------------------------------------------------------------------------------------- */}
-      <div className="carousel-container">
-      <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
-        <div className="carousel-inner">
-          <div className="carousel-item active">
-            <img src="..." className="d-block w-100" alt="Slide 1" />
-          </div>
-          <div className="carousel-item">
-            <img src="..." className="d-block w-100" alt="Slide 2" />
-          </div>
-          <div className="carousel-item">
-            <img src="..." className="d-block w-100" alt="Slide 3" />
-          </div>
-          <div className="carousel-item">
-            <img src="..." className="d-block w-100" alt="Slide 4" />
-          </div>
-        </div>
-        <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Previous</span>
-        </button>
-        <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span className="carousel-control-next-icon" aria-hidden="true"></span>
-          <span className="visually-hidden">Next</span>
-        </button>
-      </div>
+      <div className='slider'>
+  <div className="slide-track-one">
+    <div className="slide-one">
+      <img src={img1} className="img-logo" />
     </div>
+    <div className="slide-one">
+      <img src={img2} className="img-logo"/>
     </div>
+    <div className="slide-one">
+      <img src={img3} className="img-logo" />
+    </div>
+    <div className="slide-one">
+      <img src={img4} className="img-logo"/>
+    </div>
+    <div className="slide-one">
+      <img src={img9} className="img-logo"/>
+    </div>
+    <div className="slide-one">
+      <img src={img10} className="img-logo"/>
+    </div>
+    <div className="slide-one">
+      <img src={img11} className="img-logo"/>
+    </div>
+  </div>
+</div>
+<div className='slider-two'>
+  <div className="slide-track-two">
+    <div className="slide-two">
+      <img src={img5} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img6} className="img-logo"/>
+    </div>
+    <div className="slide-two">
+      <img src={img7} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img8} className="img-logo"/>
+    </div>
+    <div className="slide-two">
+      <img src={img12} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img13} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img14} className="img-logo" />
+    </div>
+  </div>
+</div>
+</div>
   );
 };
 
