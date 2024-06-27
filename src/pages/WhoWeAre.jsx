@@ -95,7 +95,56 @@ const WhoWeAre = () => {
           </p>
         </div>
       </div>
-
+      <div className='slider'>
+  <div className="slide-track-one">
+    <div className="slide-one">
+      <img src={img1} className="img-logo" />
+    </div>
+    <div className="slide-one">
+      <img src={img2} className="img-logo"/>
+    </div>
+    <div className="slide-one">
+      <img src={img3} className="img-logo" />
+    </div>
+    <div className="slide-one">
+      <img src={img4} className="img-logo"/>
+    </div>
+    <div className="slide-one">
+      <img src={img9} className="img-logo"/>
+    </div>
+    <div className="slide-one">
+      <img src={img10} className="img-logo"/>
+    </div>
+    <div className="slide-one">
+      <img src={img11} className="img-logo"/>
+    </div>
+  </div>
+</div>
+<div className='slider-two'>
+  <div className="slide-track-two">
+    <div className="slide-two">
+      <img src={img5} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img6} className="img-logo"/>
+    </div>
+    <div className="slide-two">
+      <img src={img7} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img8} className="img-logo"/>
+    </div>
+    <div className="slide-two">
+      <img src={img12} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img13} className="img-logo" />
+    </div>
+    <div className="slide-two">
+      <img src={img14} className="img-logo" />
+    </div>
+  </div>
+</div>
 </div>
   );
 };
