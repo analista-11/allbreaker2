@@ -37,7 +37,7 @@
 
 .who-we-are__title {
   font-size: 5.6rem;
-  color: #d11515;
+  color: #ffffff;
   line-height: 1;
 }
 
@@ -405,8 +405,9 @@
   }
 
   .custom-subcontainer-video {
-    width: 99%;
+    width: 100%;
     height: auto;
+    border-radius: 8px;
   }
 
   .custom-subcontainer-title {
@@ -444,7 +445,7 @@
 
 @media (max-width: 1324px) {
   .who-we-are__container {
-    min-height: a;
+    min-height: auto;
     height: 160vh;
   }
 
