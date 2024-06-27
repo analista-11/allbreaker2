@@ -18,13 +18,14 @@ import img11 from '../assets/logos/logo-11.png';
 import img12 from '../assets/logos/logo-12.png';
 import img13 from '../assets/logos/logo-13.png';
 import img14 from '../assets/logos/logo-14.png';
+import imgPremio from '../assets/logoPremio.png'
 
 const WhoWeAre = () => {
   useEffect(() => {
     const duplicateSlides = (slideTrackClass, slideClass) => {
       const slideTrack = document.querySelector(slideTrackClass);
       const slides = Array.from(document.querySelectorAll(slideClass));
-      
+
       slides.forEach(slide => {
         const clone = slide.cloneNode(true);
         slideTrack.appendChild(clone);
@@ -34,7 +35,7 @@ const WhoWeAre = () => {
     duplicateSlides('.slide-track-one', '.slide-one');
     duplicateSlides('.slide-track-two', '.slide-two');
   }, []);
-  
+
   return (
     <div className="page-container">
       <div className="who-we-are__container">
@@ -73,11 +74,11 @@ const WhoWeAre = () => {
         <div className="custom-subcontainer-left">
           <h2 className="custom-subcontainer-title">Nuestro Compromiso</h2>
           <ul className="custom-subcontainer-list">
-            <li>Lorem ipsum dolor sit amet</li>
-            <li>Consectetur adipiscing elit</li>
-            <li>Quisque nisl eros, pulvinar facilisis</li>
-            <li>Auctor consequat urna</li>
-            <li>Morbi a bibendum metus</li>
+            <li className="centered-justified">Lorem ipsum dolor sit amet</li>
+            <li className="centered-justified">Consectetur adipiscing elit</li>
+            <li className="centered-justified">Quisque nisl eros, pulvinar facilisis</li>
+            <li className="centered-justified">Auctor consequat urna</li>
+            <li className="centered-justified">Morbi a bibendum metus</li>
           </ul>
         </div>
         <div className="custom-subcontainer-right">
@@ -95,57 +96,72 @@ const WhoWeAre = () => {
           </p>
         </div>
       </div>
+      {/* ----------- sliders ----------- */}
       <div className='slider'>
-  <div className="slide-track-one">
-    <div className="slide-one">
-      <img src={img1} className="img-logo" />
-    </div>
-    <div className="slide-one">
-      <img src={img2} className="img-logo"/>
-    </div>
-    <div className="slide-one">
-      <img src={img3} className="img-logo" />
-    </div>
-    <div className="slide-one">
-      <img src={img4} className="img-logo"/>
-    </div>
-    <div className="slide-one">
-      <img src={img9} className="img-logo"/>
-    </div>
-    <div className="slide-one">
-      <img src={img10} className="img-logo"/>
-    </div>
-    <div className="slide-one">
-      <img src={img11} className="img-logo"/>
-    </div>
+        <div className="slide-track-one">
+          <div className="slide-one">
+            <img src={img1} className="img-logo" />
+          </div>
+          <div className="slide-one">
+            <img src={img2} className="img-logo" />
+          </div>
+          <div className="slide-one">
+            <img src={img3} className="img-logo" />
+          </div>
+          <div className="slide-one">
+            <img src={img4} className="img-logo" />
+          </div>
+          <div className="slide-one">
+            <img src={img9} className="img-logo" />
+          </div>
+          <div className="slide-one">
+            <img src={img10} className="img-logo" />
+          </div>
+          <div className="slide-one">
+            <img src={img11} className="img-logo" />
+          </div>
+        </div>
+      </div>
+      <div className='slider-two'>
+        <div className="slide-track-two">
+          <div className="slide-two">
+            <img src={img5} className="img-logo" />
+          </div>
+          <div className="slide-two">
+            <img src={img6} className="img-logo" />
+          </div>
+          <div className="slide-two">
+            <img src={img7} className="img-logo" />
+          </div>
+          <div className="slide-two">
+            <img src={img8} className="img-logo" />
+          </div>
+          <div className="slide-two">
+            <img src={img12} className="img-logo" />
+          </div>
+          <div className="slide-two">
+            <img src={img13} className="img-logo" />
+          </div>
+          <div className="slide-two">
+            <img src={img14} className="img-logo" />
+          </div>
+        </div>
+      </div>
+      {/* ----------- premios ----------- */}
+      
+      <div class="awards-container">
+  <div class="awards-column-left">
+    <h2 class="awards-title">Premio Destacado</h2>
+    <p class="awards-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    <img src={imgPremio} alt="Premio Izquierda" class="awards-image-left"/>
+  </div>
+  <div class="awards-column-right">
+    <img src="ruta-de-la-imagen-derecha.jpg" alt="Premio Derecha" class="awards-image-right"/>
   </div>
 </div>
-<div className='slider-two'>
-  <div className="slide-track-two">
-    <div className="slide-two">
-      <img src={img5} className="img-logo" />
+
+
     </div>
-    <div className="slide-two">
-      <img src={img6} className="img-logo"/>
-    </div>
-    <div className="slide-two">
-      <img src={img7} className="img-logo" />
-    </div>
-    <div className="slide-two">
-      <img src={img8} className="img-logo"/>
-    </div>
-    <div className="slide-two">
-      <img src={img12} className="img-logo" />
-    </div>
-    <div className="slide-two">
-      <img src={img13} className="img-logo" />
-    </div>
-    <div className="slide-two">
-      <img src={img14} className="img-logo" />
-    </div>
-  </div>
-</div>
-</div>
   );
 };
 
