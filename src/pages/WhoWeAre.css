@@ -1,0 +1,322 @@
+/* src/pages/WhoWeAre/WhoWeAre.css */
+.who-we-are__container {
+    position: relative;
+    width: 100%;
+    height: 110vh;
+    overflow: hidden;
+    margin-bottom: -181px; /* Ajusta el margen inferior para eliminar el espacio */
+}
+
+.who-we-are__background-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 81%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.who-we-are__content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 85vh;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.who-we-are__content-left {
+    flex: 1;
+    padding: 20px;
+    padding-top: 0px;
+    text-align: left;
+}
+
+.who-we-are__title {
+    font-size: 5.6rem;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.who-we-are__text {
+    margin-top: 10PX;
+    font-size: 1.5rem;
+    color: #ffffff;
+    line-height: 1;
+}
+
+.who-we-are__learn-more-button {
+    margin-top: 20PX;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #000000;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.who-we-are__learn-more-button:hover {
+    background-color: #ffffff;
+}
+
+.who-we-are__content-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.who-we-are__image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.who-we-are__subcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin-top: 100px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    margin-top: 20px;
+  }
+  
+  .who-we-are__subcontainer-left, .who-we-are__subcontainer-right {
+    flex: 1;
+  }
+  
+  .who-we-are__subcontainer-video {
+    width: 100%;
+    height: auto;
+
+    border-radius: 20px;
+  }
+  
+  .who-we-are__subcontainer-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    padding-left: 30px;
+  }
+  
+  .who-we-are__subcontainer-text {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 30px;
+  }
+  
+
+  .custom-subcontainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+  }
+  
+  .custom-subcontainer-left {
+    flex: 1;
+    text-align: right; 
+    padding-right: 20px;
+  }
+  
+  .custom-subcontainer-right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+  
+  .custom-subcontainer-video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+  .custom-subcontainer-title {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+  
+  .custom-subcontainer-list {
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  .new-container {
+    background-color: rgb(0, 0, 0);
+    color: #ffffff;
+    padding: 50px 20px;
+    text-align: center; /* Centra el contenido */
+  }
+  
+  .new-container-content {
+    max-width: 800px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centra el contenido horizontalmente */
+  }
+  
+  .new-container-title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .new-container-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+
+  .carousel-container {
+    max-width: 800px; /* Ancho máximo del contenedor */
+    margin: 0 auto; /* Centra horizontalmente */
+  }
+  
+  .carousel-item img {
+    height: 400px; /* Altura de las imágenes */
+    object-fit: cover; /* Ajusta las imágenes al tamaño del contenedor */
+  }
+
+
+@media (max-width: 1324px) {
+    .who-we-are__background-video {
+        width: 120%;
+        min-height: 120vh;
+        height: 120vh;
+    }
+
+
+    .who-we-are__content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .who-we-are__content-left,
+    .who-we-are__content-right {
+        flex: unset;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .who-we-are__title {
+        padding-top: 30px;
+        font-size: 4rem;
+    }
+
+    .who-we-are__text {
+        font-size: 1.5rem;
+    }
+
+    .who-we-are__learn-more-button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    .who-we-are__image {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        margin-top: -30px;
+    }
+
+    .who-we-are__subcontainer {
+        display: flex;
+        flex-direction: column-reverse; /* Cambia el orden para móviles */
+        align-items: center;
+        padding: 20px;
+        background-color: rgb(0, 0, 0);
+        color: #ffffff;
+
+        margin-top: 20px;
+      }
+      
+      .who-we-are__subcontainer-left, .who-we-are__subcontainer-right {
+        width: 100%;
+        text-align: center; /* Centra el contenido en móviles */
+        margin-bottom: 20px; /* Espacio entre los dos elementos */
+      }
+      
+      .who-we-are__subcontainer-video {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+      }
+      
+      .who-we-are__subcontainer-title {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+      }
+      
+      .who-we-are__subcontainer-text {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+      }
+
+
+      .custom-subcontainer {
+    flex-direction: column-reverse; /* Cambia el orden para móviles */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .custom-subcontainer-left, .custom-subcontainer-right {
+    width: 100%;
+    text-align: center; /* Centra el contenido en móviles */
+    margin-bottom: 20px; /* Espacio entre los dos elementos */
+  }
+
+  .custom-subcontainer-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+
+  .custom-subcontainer-title {
+    font-size: 2.5rem;
+  }
+
+  .custom-subcontainer {
+    flex-direction: column; /* Cambia el orden para móviles */
+    align-items: center;
+    padding: 20px;
+  }
+
+  .custom-subcontainer-left, .custom-subcontainer-right {
+    width: 100%;
+    text-align: center; /* Centra el contenido en móviles */
+    margin-bottom: 20px; /* Espacio entre los dos elementos */
+  }
+
+  .custom-subcontainer-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 20px; /* Espacio entre el texto y el video en móviles */
+  }
+
+  .custom-subcontainer-title {
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 1324px) {
+    .who-we-are__container {
+        min-height: 100vh;
+        height: 130vh;
+    }
+
+    .who-we-are__background-video {
+        width: 120%;
+        height: 100%;
+    }
+}
