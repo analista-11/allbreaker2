@@ -326,6 +326,10 @@
   align-items: center;
   padding: 20px;
   background-color: #f4f4f4; /* Cambia el color de fondo según tus necesidades */
+  background-image: url('../assets/fondoPremios.png'); /* Añade la ruta a tu imagen de fondo */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .awards-column-left, .awards-column-right {
@@ -343,11 +347,22 @@
   margin-bottom: 20px;
 }
 
-.awards-image-left, .awards-image-right {
-  width: 100%;
+/* Ajuste de tamaño para las imágenes */
+.awards-image-left {
+  width: 80%; /* Ajusta el tamaño según tus necesidades */
   height: auto;
   border-radius: 10px;
 }
+
+.awards-image-right {
+  width: 60%; /* Ajusta el tamaño según tus necesidades */
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
 
 @media (max-width: 1324px) {
   .who-we-are__background-video {
@@ -484,16 +499,23 @@
     align-items: flex-start;
   }
 
+  .awards-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .awards-column-left, .awards-column-right {
     width: 100%;
     padding: 10px;
   }
 
-  .awards-image-left, .awards-image-right {
-    width: 100%;
-    margin-top: 20px;
+  .awards-image-left {
+    width: 100%; /* Ajusta el tamaño en dispositivos móviles */
   }
 
+  .awards-image-right{
+    width: 85%;
+  }
 
 }
 

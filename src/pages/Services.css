@@ -1,0 +1,353 @@
+.services-page {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container-full {
+    background-color: black;
+    padding: 40px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.service-title-one {
+    font-size: 70px;
+}
+
+/** -------------------------------- */
+
+.services-page2 {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container2 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.service-text-column2 {
+    width: 100%;
+    padding-left: 100px;
+}
+
+.service-title2 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service-description2 {
+    font-size: 20px;
+}
+
+.service-image-column2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image2 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+/** -------------------------------- */
+
+.services-page3 {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container3 {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.service-image-column3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image3 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.service-text-column3 {
+    width: 100%;
+    padding-right: -100px;
+}
+
+.service-title3 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service-description3 {
+    font-size: 20px;
+}
+
+/** -------------------------------- */
+
+.services-page4 {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container4 {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.service-text-column4 {
+    width: 100%;
+    padding-left: 100px;
+}
+
+.service-image-column4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image4 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.service-title4 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service-description4 {
+    font-size: 20px;
+}
+
+/** -------------------------------- */
+
+.services-page5 {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container5 {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.service-text-column5 {
+    text-align: center;
+}
+
+.service-title5 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service-description5 {
+    font-size: 20px;
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.carousel-container5 {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.carousel-track5 {
+    display: flex;
+    animation: scroll5 20s linear infinite;
+}
+
+.carousel-slide5 {
+    flex: 0 0 400px;
+    /* Ajusta el tamaño de las imágenes aquí */
+    margin: 30px 10px;
+}
+
+.carousel-slide5 img {
+    width: 100%;
+    height: 250px;
+    /* Ajusta la altura de las imágenes aquí */
+    object-fit: cover;
+}
+
+@keyframes scroll5 {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/** -------------------------------- */
+
+.service-container6 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+
+.service-image6-container {
+    width: 100%;
+}
+
+.service-image6 {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/** -------------------------------- */
+
+.service-container7 {
+    background-color: black;
+    color: white;
+    width: 100%;
+    height: 50vh;
+    /* Reducido a 80% del viewport en altura */
+    text-align: center;
+    box-sizing: border-box;
+    background-image: url('../assets/serviceFondo1.png');
+    /* Asegúrate de que la ruta de la imagen sea correcta */
+    background-size: cover;
+    background-position: center;
+    margin-top: -20px;
+}
+
+/** -------------------------------- */
+
+.services-page8 {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container8 {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.service-image-column8 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image8 {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+}
+
+.service-text-column8 {
+    width: 100%;
+    padding-right: -100px;
+}
+
+.service-title8 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.service-description8 {
+    font-size: 20px;
+}
+
+/** -------------------------------- */
+
+.services-page9 {
+    background-color: black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.service-container9 {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+.service-image-column9 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.service-image9 {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+}

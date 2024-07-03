@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { Suspense, useEffect } from 'react';
 import './WhoWeAre.css';
 import autorizacionLogo from '../assets/autorizacionLogo.png';
 import backgroundVideo from '../assets/videoSomos-1.mp4';
@@ -18,7 +18,12 @@ import img11 from '../assets/logos/logo-11.png';
 import img12 from '../assets/logos/logo-12.png';
 import img13 from '../assets/logos/logo-13.png';
 import img14 from '../assets/logos/logo-14.png';
-import imgPremio from '../assets/logoPremio.png'
+import imgPremio from '../assets/logoPremio.png';
+import premio from '../assets/premio.png'
+import Footer from '../components/Footer';
+// import { Canvas } from '@react-three/fiber';
+// import ModelPremio from '../components/animation/ModelPremio'
+// import { OrbitControls } from '@react-three/drei';
 
 const WhoWeAre = () => {
   useEffect(() => {
@@ -97,7 +102,7 @@ const WhoWeAre = () => {
         </div>
       </div>
       {/* ----------- sliders ----------- */}
-      <div className='slider'>
+      <div className='slider' >
         <div className="slide-track-one">
           <div className="slide-one">
             <img src={img1} className="img-logo" />
@@ -155,10 +160,15 @@ const WhoWeAre = () => {
     <p class="awards-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
     <img src={imgPremio} alt="Premio Izquierda" class="awards-image-left"/>
   </div>
+  <div class="awards-column-right" >
   <div class="awards-column-right">
-    <img src="ruta-de-la-imagen-derecha.jpg" alt="Premio Derecha" class="awards-image-right"/>
+    <img src={premio} alt="Premio Derecha" class="awards-image-right"/>
+  </div>
   </div>
 </div>
+{/* ----------- footer ----------- */}
+
+
 
 
     </div>
