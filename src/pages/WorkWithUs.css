@@ -1,0 +1,83 @@
+.work-page {
+    position: relative;
+    background-image: url('../assets/tn.png'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 88.5vh; /* Ocupa toda la altura de la pantalla */
+    width: 100vw; /* Ocupa toda la anchura de la pantalla */
+    display: flex; /* Centrar contenido */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: baseline;
+    padding-left: 50px; /* Alinear horizontalmente */
+    overflow: hidden; /* Para asegurar que el pseudo-elemento no se desborde */
+}
+
+.work-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.233); /* Capa semitransparente negra */
+    z-index: 1;
+}
+
+.container-wrapper {
+    border-radius: 10px;
+    position: relative;
+    z-index: 2; 
+    margin-left: 50px; /* Asegura que el contenido esté por encima de la capa oscura */
+}
+
+.form-row {
+    display: flex; /* Alinear inputs en línea */
+    margin-bottom: 15px; /* Espacio entre filas */
+}
+
+.form-row input,
+.form-row select,
+.left-container textarea {
+    padding: 15px;
+    margin-right: 10px; 
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Añadir sombra en foco */
+    border: none;
+    color: #000000;
+    background-color: #d3d3d3a4; /* Cambia el color de fondo del formulario */
+    width: 450px; /* Ajusta el ancho del formulario */
+    max-width: 400px; /* Aumentado un 10% de 400px */
+}
+
+.left-container textarea {
+    resize: none; /* Evita el cambio de tamaño */
+}
+
+.left-container button {
+    padding: 10px;
+    background-color: #124479;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente mayor */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efecto de transformación */
+    width: 100%; 
+    max-width: 220px; /* Aumentado un 10% de 200px */
+    margin-top: 10px; /* Espaciado superior */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+}
+
+.left-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+
+.subtitle {
+    color: #000000; /* Color del texto */
+    margin-bottom: 20px; /* Espacio debajo del texto */
+    font-size: 1em; /* Tamaño de fuente */
+    font-family: 'Arial', sans-serif; /* Tipo de fuente */
+}

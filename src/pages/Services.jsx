@@ -10,6 +10,11 @@ import carrusel4 from '../assets/carrouselServices/carrusel-4.png';
 import serviceFondo from '../assets/serviceFondo.png'
 import unreal1 from '../assets/unreal1.png'
 import editor1 from '../assets/editor1.png'
+import vs1 from '../assets/vS1.mp4'
+import vs2 from '../assets/vS2.mp4'
+import fp1 from '../assets/fp1.png'
+
+
 
 
 const Services = () => {
@@ -30,26 +35,32 @@ const Services = () => {
   return (
     <div className="services-page">
       <div className="service-container-full">
-        <h2 className="service-title-one">Lorem Ipsum</h2>
+        <h2 className="service-title-one">Nuestros Servicios</h2>
       </div>
 
       {/* Service 1 */}
       <div className="service-container2">
         <div className="service-text-column2">
-          <h2 className="service-title2">3D Scanning + Photogrammetry + 3D Modeling</h2>
+          <h2 className="service-title2">3D Scanning + Photogrammetry</h2>
           <p className="service-description2">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna nisi. Cras interdum sagittis dui, vel tempus metus volutpat ut. Nulla facilisi. Nam at ex nec arcu varius dapibus. Duis consequat nulla ac elit dictum.
           </p>
         </div>
         <div className="service-image-column2">
-          <img src={serviceImage1} alt="Service" className="service-image2" />
-        </div>
+  <video className="service-video1" autoPlay loop muted>
+    <source src={vs1} type="video/mp4" />
+    Tu navegador no soporta el video.
+  </video>
+</div>
       </div>
 
       {/* Service 2 */}
       <div className="service-container3">
         <div className="service-image-column3">
-          <img src={serviceImage2} alt="Service" className="service-image3" />
+        <video className="service-video1" autoPlay loop muted>
+    <source src={vs2} type="video/mp4" />
+    Tu navegador no soporta el video.
+  </video>
         </div>
         <div className="service-text-column3">
           <h2 className="service-title3">High Volume 3D Content Creation</h2>
@@ -61,34 +72,17 @@ const Services = () => {
 
       {/* Service 3 */}
       <div className="service-container4">
-        <div className="service-text-column4">
-          <h2 className="service-title4">Full Project Development in Unity/UE5</h2>
-          <p className="service-description4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna nisi. Cras interdum sagittis dui, vel tempus metus volutpat ut. Nulla facilisi. Nam at ex nec arcu varius dapibus. Duis consequat nulla ac elit dictum.
-          </p>
-        </div>
-        <div className="service-image-column4">
-          <img src={serviceImage3} alt="Service" className="service-image4" />
-        </div>
-      </div>
+  <div className="service-text-column4">
+    <h2 className="service-title4">Full Project Development in Unity/UE5</h2>
+    <p className="service-description4">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna nisi. Cras interdum sagittis dui, vel tempus metus volutpat ut. Nulla facilisi. Nam at ex nec arcu varius dapibus. Duis consequat nulla ac elit dictum.
+    </p>
+  </div>
+  <div className="service-image-column4">
+    <img src={fp1} alt="Service" className="service-image4" />
+  </div>
+</div>
 
-      {/* Service 4 */}
-      <div className="service-container5">
-        <div className="service-text-column5">
-          <h2 className="service-title5">UEFN - Fortnite Content Creation + Programming</h2>
-          <p className="service-description5">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel urna nisi. Cras interdum sagittis dui, vel tempus metus volutpat ut. Nulla facilisi. Nam at ex nec arcu varius dapibus. Duis consequat nulla ac elit dictum.
-          </p>
-        </div>
-        <div className="carousel-container5">
-          <div className="carousel-track5">
-            <div className="carousel-slide5"><img src={carrusel1} alt="Image 1" /></div>
-            <div className="carousel-slide5"><img src={carrusel2} alt="Image 2" /></div>
-            <div className="carousel-slide5"><img src={carrusel3} alt="Image 3" /></div>
-            <div className="carousel-slide5"><img src={carrusel4} alt="Image 4" /></div>
-          </div>
-        </div>
-      </div>
       {/* Service 5 */}
       <div className="service-container6">
         <div className="service-image6-container">
