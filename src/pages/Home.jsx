@@ -26,11 +26,6 @@ const Home = () => {
           </Canvas>
         </div>
       </div>
-      <div className="footer-container">
-        <footer>
-          <Copyright />
-        </footer>
-      </div>
     </div>
   );
 };
