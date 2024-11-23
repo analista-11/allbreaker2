@@ -17,7 +17,7 @@ const images = [
   { src: portafolio1, alt: 'Image 3', text: 'AD ASTRA FUERZA AEROESPACIAL COLOMBIANA', link: '/path1' },
   { src: portafolio1, alt: 'Image 4', text: 'AD ASTRA FUERZA AEROESPACIAL COLOMBIANA', link: '/path1' },
   { src: portafolio1, alt: 'Image 5', text: 'AD ASTRA FUERZA AEROESPACIAL COLOMBIANA', link: '/path1' },
-  { src: portafolio1, alt: 'Image 6', text: 'AD ASTRA FUERZA AEROESPACIAL COLOMBIANA', link: '/path1' },ccce293c945d4a97585a78d1b88c79d47c744c7
+  { src: portafolio1, alt: 'Image 6', text: 'AD ASTRA FUERZA AEROESPACIAL COLOMBIANA', link: '/path1' },
 ];
 
 const Portfolio = () => {
