@@ -1,0 +1,122 @@
+/* src/pages/News.css */
+.news-page {
+    width: 100%;
+    padding: 20px;
+    background-color: black;
+  }
+  
+  .news-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .news-title {
+    text-align: center;
+    margin-bottom: -30px;
+    color: white;
+    font-size: 50px;
+  }
+  
+  .large-news-card {
+    border: 1px solid #ccc;
+    padding-bottom: 8px; /* Reducir padding */
+    margin-bottom: 16px; /* Reducir margen */
+    text-align: center;
+    background-color: #fff;
+    border-radius: 30px;
+    transform: scale(0.8); /* Escalar la carta al 80% */
+    transform-origin: center;
+  }
+  
+  .news-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px; /* Reducir margen */
+    border-radius: 30px 30px 0 0 ;
+  }
+  
+  .news-card-title {
+    font-size: 50px; /* Reducir tamaño de fuente */
+  }
+  
+  .news-card-text {
+    font-size: 20px; /* Reducir tamaño de fuente */
+    margin-bottom: 16px; /* Reducir margen */
+  }
+  
+  .news-card-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .news-card-button:hover {
+    background-color: #575757;
+  }
+  
+  .additional-news-container {
+    background-color: black;
+    border-radius: 30px;
+  }
+  
+  .additional-news-title {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .small-news-cards {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .small-news-card {
+    width: 30%;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+  }
+  
+  .small-news-card:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+  }
+  
+  .small-news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 30px 30px 0 0 ;
+  }
+  
+  .small-news-card-title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .small-news-card-text {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+  }
+  
+  .small-news-card-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+  }
+  
+  .small-news-card-button:hover {
+    background-color: #575757;
+  }
+  
