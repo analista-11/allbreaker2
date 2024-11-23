@@ -3,6 +3,7 @@
     width: 100%;
     padding: 20px;
     background-color: black;
+<<<<<<< HEAD
   }
   
   .news-container {
@@ -64,10 +65,69 @@
   }
   
   .additional-news-title {
+=======
+}
+  
+.news-container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+  
+.news-title {
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+  
+.large-news-card {
+    border: 1px solid #ccc;
+    padding-bottom: 16px; /* Aumentar padding */
+    margin-bottom: 24px; /* Aumentar margen */
+    text-align: center;
+    background-color: #fff;
+    transform: scale(1.); /* Ajustar escala a tamaño normal */
+    transform-origin: center;
+}
+  
+.news-image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 16px; /* Mantener margen */
+}
+  
+.news-card-title {
+    font-size: 50px; /* Aumentar tamaño de fuente */
+}
+  
+.news-card-text {
+    font-size: 20px; /* Aumentar tamaño de fuente */
+    margin-bottom: 20px; /* Aumentar margen */
+}
+  
+.news-card-button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Aumentar padding */
+    cursor: pointer;
+
+}
+  
+.news-card-button:hover {
+    background-color: #575757;
+}
+  
+.additional-news-container {
+    background-color: black;
+}
+  
+.additional-news-title {
+>>>>>>> 7ccce293c945d4a97585a78d1b88c79d47c744c7
     color: white;
     font-size: 30px;
     text-align: center;
     margin-bottom: 20px;
+<<<<<<< HEAD
   }
   
   .small-news-cards {
@@ -108,11 +168,52 @@
   }
   
   .small-news-card-button {
+=======
+}
+  
+.small-news-cards {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.small-news-card {
+    width: 30%;
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    transition: transform 0.3s, opacity 0.3s;
+}
+  
+.small-news-card:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+  
+.small-news-image {
+    width: 100%;
+    height: auto;
+}
+  
+.small-news-card-title {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 10px;
+}
+  
+.small-news-card-text {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 10px;
+}
+  
+.small-news-card-button {
+>>>>>>> 7ccce293c945d4a97585a78d1b88c79d47c744c7
     background-color: #000000;
     color: white;
     border: none;
     padding: 5px 10px;
     cursor: pointer;
+<<<<<<< HEAD
     border-radius: 10px;
   }
   
@@ -120,3 +221,11 @@
     background-color: #575757;
   }
   
+=======
+
+}
+  
+.small-news-card-button:hover {
+    background-color: #575757;
+}
+>>>>>>> 7ccce293c945d4a97585a78d1b88c79d47c744c7

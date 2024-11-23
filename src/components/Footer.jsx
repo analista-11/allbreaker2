@@ -11,19 +11,15 @@ const Footer = () => {
       <div className="footer-column">
         <h3 className="footer-title">Links Rápidos</h3>
         <ul className="footer-links">
-          <li><a href="/link1">Link 1</a></li>
-          <li><a href="/link2">Link 2</a></li>
-          <li><a href="/link3">Link 3</a></li>
-          <li><a href="/link4">Link 4</a></li>
+          <li><a href="/link1">Inicio</a></li>
+          <li><a href="/link2">Quienes Somos</a></li>
+          <li><a href="/link3">Servicios</a></li>
+          <li><a href="/link4">Portafolio</a></li>
+          <li><a href="/link4">Noticias</a></li>
+          <li><a href="/link4">Contacto</a></li>
+          <li><a href="/link4">Trabaja con Nosotros</a></li>
+          <li><a href="/link4">Preguntas Frecuentes</a></li>
         </ul>
-      </div>
-      <div className="footer-column">
-        <h3 className="footer-title">Título</h3>
-        <p className="footer-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
-      </div>
-      <div className="footer-column">
-        <h3 className="footer-title">Redes Sociales</h3>
-        {/* Aquí agregarás los iconos de redes sociales */}
       </div>
     </footer>
   );

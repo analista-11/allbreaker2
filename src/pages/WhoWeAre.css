@@ -1,532 +1,390 @@
-/* src/pages/WhoWeAre/WhoWeAre.css */
-.who-we-are__container {
+/* General Page Container */
+.page-container {
   position: relative;
   width: 100%;
-  height: 110vh;
   overflow: hidden;
-  margin-bottom: -181px;
-  /* Ajusta el margen inferior para eliminar el espacio */
 }
 
-.who-we-are__background-video {
+/* Certification Container */
+.certification-container {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.background-video {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 90%;
   object-fit: cover;
   z-index: -1;
 }
 
-.who-we-are__content {
+.certification-content {
   position: relative;
   z-index: 1;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  height: 85vh;
-  padding-left: 30px;
-  padding-right: 30px;
+  color: white;
 }
 
-.who-we-are__content-left {
-  flex: 1;
-  padding: 20px;
-  padding-top: 0px;
-  text-align: left;
-}
-
-.who-we-are__title {
-  font-size: 5.6rem;
-  color: #ffffff;
-  line-height: 1;
-}
-
-.who-we-are__text {
-  margin-top: 10PX;
-  font-size: 1.5rem;
-  color: #ffffff;
-  line-height: 1;
-}
-
-.who-we-are__learn-more-button {
-  margin-top: 20PX;
-  padding: 10px 20px;
-  font-size: 1rem;
-  color: #000000;
-  background-color: #ffffff;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-}
-
-.who-we-are__learn-more-button:hover {
-  background-color: #ffffff;
-}
-
-.who-we-are__content-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
-
-.who-we-are__image {
-  max-width: 100%; /* Ajusta el tamaño máximo para que sea responsive */
-  height: auto; /* Altura automática para mantener la proporción */
-  border-radius: 10px;
-}
-
-.who-we-are__subcontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  margin-top: 100px;
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-  margin-top: 20px;
-}
-
-.who-we-are__subcontainer-left,
-.who-we-are__subcontainer-right {
-  flex: 1;
-}
-
-.who-we-are__subcontainer-video {
-  width: 100%;
+.certification-logo {
+  width: 30%;
   height: auto;
-
-  border-radius: 20px;
-}
-
-.who-we-are__subcontainer-title {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-  margin-left: 20px;
-}
-
-.who-we-are__subcontainer-text {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  margin-left: 20px;
-}
-
-
-.custom-subcontainer {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-}
-
-.custom-subcontainer-left {
-  flex: 1;
-  text-align: right;
-  padding-right: 20px;
-}
-
-.custom-subcontainer-right {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.custom-subcontainer-video {
-  width: 100%;
-  height: auto;
-  border-radius: 20px;
-}
-
-.custom-subcontainer-title {
-  font-size: 4rem;
-  margin-bottom: 1rem;
-}
-
-.custom-subcontainer-list {
-  list-style-type: none;
-  font-size: 1rem;
-  text-decoration: none;
-}
-
-.centered-justified {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-}
-
-.new-container {
-  background-color: rgb(0, 0, 0);
-  color: #ffffff;
-  padding: 50px 20px;
-  text-align: center;
-  /* Centra el contenido */
-}
-
-.new-container-content {
-  max-width: 800px;
-  /* Ancho máximo del contenido */
-  margin: 0 auto;
-  /* Centra el contenido horizontalmente */
-}
-
-.new-container-title {
-  font-size: 3rem;
   margin-bottom: 20px;
 }
 
-.new-container-text {
-  font-size: 1.2rem;
-  line-height: 1.6;
+.certification-title {
+  font-size: 4em;
+  margin-top: 0;
 }
 
-
-.slider {
-  height: 250px;
-  margin: auto;
+/* Team Description Container */
+.team-description-container {
   position: relative;
-  width: 90%;
-  display: grid;
-  place-items: center;
+  background-image: url('../assets/Fondo_Equipo.png'); 
+  background-size: cover; 
+  background-position: center; 
+  color: white; 
+  padding: 20px; 
+}
+
+/* Flex Container for Two Columns */
+.team-columns {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin-top: 20px; 
+}
+
+/* Titles and Paragraphs */
+.team-description-container h2 {
+  font-size: 2em; 
+  margin-bottom: 10px;
+}
+
+.team-description-container p {
+  font-size: 1.3em; 
+  max-width: 1000px; 
+  margin: 0 auto;
+  line-height: 1.5; 
+}
+
+/* Responsive h3 */
+.team-description-container h3 {
+  font-size: 3em; 
+  margin-bottom: 10px;
+}
+
+.tasks-developed ul {
+  list-style-type: none; 
+  padding: 0; 
+  margin: 0; 
+  font-size: 1.3em; 
+}
+
+.team-info {
+  display: flex;
+  justify-content: space-between; 
+  align-items: flex-start; 
+  margin-top: 20px; 
+}
+
+.team-overview {
+  margin: 10px; 
+  text-align: center; 
+  flex: 1; 
+}
+
+.tasks-developed {
+  margin: 10px; 
+  text-align: center;
+  flex: 1; 
+  align-self: flex-start; 
+}
+
+/* Reference Image Container */
+.reference-image {
+  flex: 1; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
+}
+
+.reference-image img {
+  width: 70%; 
+  height: auto; 
+  margin-top: 50px;
+}
+
+/* Awards Container */
+.awards-container {
+  position: relative;
+  background-image: url('../assets/Fpremio.png');
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  z-index: 1;
+}
+
+.awards-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.651); /* Ajusta la opacidad para oscurecer más o menos */
+  z-index: -1; /* Asegúrate de que el pseudo-elemento esté detrás del contenido */
+}
+
+.awards-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: left; 
+  padding: 20px;
+  border-radius: 10px; 
+}
+
+.awards-image {
+  flex: 1; /* Allow column to grow */
+  max-width: 40%; /* Max width of the image column */
+}
+
+.awards-image img {
+  max-width: 100%; /* Ensure the image is responsive */
+  height: 350px;
+  margin: 150px; /* Maintain the aspect ratio */
+}
+
+.awards-description {
+  flex: 1; /* Allow column to grow */
+  padding-left: 20px; /* Space between image and text */
+}
+
+.awards-description h2 {
+  font-size: 3em;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.awards-description p {
+  font-size: 1.5em;
+  margin: 0;
+  margin-left: 100px;
+}
+
+/* Clients Container */
+.clients-container {
+  padding: 20px;
+  text-align: center;
+  background-color: #d3d2d2; /* Light gray background */
+}
+
+.clients-container h2 {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+/* Slider for Clients */
+.slider {
+  width: 80vw;
+  height: auto;
+  margin: auto;
   overflow: hidden;
 }
 
-.slide-track-one {
+.slide-track {
   display: flex;
-  width: calc(250px * 18);
   animation: scroll 40s linear infinite;
+  width: calc(200px * 18); /* Ajusta según el número total de imágenes */
 }
 
+.slide {
+  flex: 0 0 200px; /* Mantiene un ancho fijo */
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  margin: 0 30px; /* Espacio lateral entre las imágenes */
+}
 
+.slide img {
+  width: 100%;
+  height: auto; /* Mantiene la proporción */
+  filter: grayscale(100%) sepia(100%) brightness(0%); /* Aplica un filtro combinado */
+}
+
+.clients-container h2 {
+  font-size: 4em; /* Ajusta el tamaño según tus necesidades */
+  color: rgb(0, 0, 0); /* Cambia el color a blanco */
+}
+
+/* Keyframes para la animación */
 @keyframes scroll {
   0% {
     transform: translateX(0);
   }
-
   100% {
-    transform: translateX(calc(-250px * 9));
+    transform: translateX(calc(-200px * 9)); /* Ajusta según el número de imágenes que se muestran */
   }
 }
 
-.slide-one {
-  height: 200px;
-  width: 250px;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  perspective: 100px;
-}
 
-.img-logo {
-  width: 100%;
-  transition: transform 1s;
-}
-
-.slider::before,
-.slider::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0));
-  content: '';
-  height: 100%;
-  position: absolute;
-  width: 15%;
-  z-index: 2;
-}
-
-.slider::before {
-  left: 0;
-  top: 0;
-}
-
-.slider::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-.slider-two {
-  height: 150px;
-  margin: auto;
-  position: relative;
-  width: 90%;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-}
-
-.slide-track-two {
-  display: flex;
-  width: calc(250px * 18);
-  animation: scroll 40s linear infinite reverse;
-  /* Añadir reverse para desplazarse hacia la derecha */
-}
-
-
-@keyframes scroll-two {
-  0% {
-    transform: translateX(0);
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .certification-title {
+    font-size: 3.5em;
   }
 
-  100% {
-    transform: translateX(calc(-250px * 9));
+  .team-description-container h2 {
+    font-size: 2.5em;
+  }
+
+  .team-description-container p {
+    font-size: 1.1em;
+  }
+
+  .team-description-container h3 {
+    font-size: 1.8em;
+  }
+
+  .awards-description h2 {
+    font-size: 1.8em;
+  }
+
+  .awards-description p {
+    font-size: 0.9em;
+  }
+
+  .clients-gallery {
+    grid-template-columns: repeat(6, 1fr); /* Adjust number of columns */
   }
 }
 
-.slide-two {
-  height: 200px;
-  width: 150px;
-  display: flex;
-  align-items: center;
-  padding: 15px;
-  margin-top: -90PX;
-  perspective: 100px;
+@media (max-width: 992px) {
+  .certification-logo {
+    width: 40%;
+  }
+
+  .certification-title {
+    font-size: 3em;
+  }
+
+  .team-description-container h2 {
+    font-size: 2em;
+  }
+
+  .team-description-container p {
+    font-size: 1em;
+  }
+
+  .team-description-container h3 {
+    font-size: 1.6em;
+  }
+
+  .awards-description h2 {
+    font-size: 1.5em;
+  }
+
+  .awards-description p {
+    font-size: 0.8em;
+  }
+
+  .clients-gallery {
+    grid-template-columns: repeat(4, 1fr); /* Adjust number of columns */
+  }
 }
 
-.slider-two img {
-  width: 100%;
-  transition: transform 1s;
+@media (max-width: 768px) {
+  .certification-logo {
+    width: 50%;
+  }
+
+  .certification-title {
+    font-size: 2.5em;
+  }
+
+  .background-video {
+    height: 80%;
+  }
+
+  .certification-container {
+    height: 80vh;
+  }
+
+  .team-description-container h2 {
+    font-size: 1.8em;
+  }
+
+  .team-description-container p {
+    font-size: 0.9em;
+  }
+
+  .team-description-container h3 {
+    font-size: 1.4em;
+  }
+
+  .team-columns {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .reference-image {
+    order: 2; /* Move image below the tasks-developed */
+  }
+
+  .reference-image img {
+    width: 80%; /* Adjust image width for smaller screens */
+  }
+
+  .awards-content {
+    flex-direction: column; /* Stack columns vertically */
+  }
+
+  .awards-description {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+
+  .clients-gallery {
+    grid-template-columns: repeat(2, 1fr); /* Adjust number of columns */
+  }
 }
 
-.slider-two img:hover {
-  transform: translateZ(20px);
-}
-
-
-
-.slider-two::before,
-.slider-two::after {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0));
-  content: '';
-  height: 100%;
-  position: absolute;
-  width: 15%;
-  z-index: 2;
-}
-
-.slider-two::before {
-  left: 0;
-  top: 0;
-}
-
-.slider-two::after {
-  right: 0;
-  top: 0;
-  transform: rotateZ(180deg);
-}
-
-
-/** ---- premios ----  */
-
-.awards-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  background-color: #f4f4f4; /* Cambia el color de fondo según tus necesidades */
-  background-image: url('../assets/fondoPremios.png'); /* Añade la ruta a tu imagen de fondo */
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.awards-column-left, .awards-column-right {
-  flex: 1;
-  padding: 20px;
-}
-
-.awards-title {
-  font-size: 5rem;
-  margin-bottom: 10px;
-}
-
-.awards-text {
-  font-size: 2rem;
-  margin-bottom: 20px;
-}
-
-/* Ajuste de tamaño para las imágenes */
-.awards-image-left {
-  width: 80%; /* Ajusta el tamaño según tus necesidades */
-  height: auto;
-  border-radius: 10px;
-}
-
-.awards-image-right {
-  width: 60%; /* Ajusta el tamaño según tus necesidades */
-  height: auto;
-  border-radius: 10px;
-}
-
-
-
-
-
-@media (max-width: 1324px) {
-  .who-we-are__background-video {
-    height: auto; /* Ajuste adicional para dispositivos móviles */
+@media (max-width: 576px) {
+  .certification-logo {
+    width: 60%;
   }
 
-
-  .who-we-are__content {
-    flex-direction: column;
-    text-align: center;
+  .certification-title {
+    font-size: 2em;
   }
 
-  .who-we-are__content-left,
-  .who-we-are__content-right {
-    flex: unset;
-    width: 100%;
-    padding: 10px;
+  .background-video {
+    height: 70%;
   }
 
-  .who-we-are__title {
-    padding-top: 30px;
-    font-size: 3rem;
+  .certification-container {
+    height: 70vh;
   }
 
-  .who-we-are__text {
-    font-size: 1.5rem;
+  .team-description-container h2 {
+    font-size: 1.5em;
   }
 
-  .who-we-are__learn-more-button {
-    padding: 10px 16px;
-    margin-bottom: 30px;
-    font-size: 0.9rem;
+  .team-description-container p {
+    font-size: 0.8em;
   }
 
-  .who-we-are__image {
-    max-width: 100%;
-    padding-bottom: 100px;
-
+  .team-description-container h3 {
+    font-size: 1.2em;
   }
 
-  .who-we-are__subcontainer {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: center;
-    padding: 20px;
-    background-color: rgb(0, 0, 0);
-    color: #ffffff;
-  }
-
-  .who-we-are__subcontainer-left,
-  .who-we-are__subcontainer-right {
-    width: 100%;
-    text-align: center;
-    /* Centra el contenido en móviles */
-    margin-bottom: 20px;
-    /* Espacio entre los dos elementos */
-  }
-
-  .who-we-are__subcontainer-video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-  }
-
-  .who-we-are__subcontainer-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .who-we-are__subcontainer-text {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
-    text-align: center;
-  }
-
-
-  .custom-subcontainer {
-    flex-direction: column-reverse;
-    /* Cambia el orden para móviles */
-    align-items: center;
-    padding: 20px;
-  }
-
-  .custom-subcontainer-left,
-  .custom-subcontainer-right {
-    width: 100%;
-    text-align: center;
-    /* Centra el contenido en móviles */
-    margin-bottom: 20px;
-    /* Espacio entre los dos elementos */
-  }
-
-  .custom-subcontainer-video {
-    width: 100%;
-    height: auto;
-  }
-
-  .custom-subcontainer-title {
-    font-size: 2rem;
-    text-align: center;
-  }
-
-  .centered-justified {
-    text-align: center;
-    font-size: 1.3rem;
-  }
-
-  .custom-subcontainer {
-    flex-direction: column;
-    /* Cambia el orden para móviles */
-    align-items: center;
-    padding: 20px;
-  }
-
-  .custom-subcontainer-left,
-  .custom-subcontainer-right {
-    width: 100%;
-    text-align: center;
-    /* Centra el contenido en móviles */
-    margin-bottom: 20px;
-    /* Espacio entre los dos elementos */
-  }
-
-  .custom-subcontainer-video {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    margin-top: 20px;
-    /* Espacio entre el texto y el video en móviles */
-  }
-
-  .awards-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .awards-container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .awards-column-left, .awards-column-right {
-    width: 100%;
-    padding: 10px;
-  }
-
-  .awards-image-left {
-    width: 100%; /* Ajusta el tamaño en dispositivos móviles */
-  }
-
-  .awards-image-right{
-    width: 85%;
-  }
-
-}
-
-@media (max-width: 1324px) {
-  .who-we-are__container {
-    min-height: auto;
-    height: 160vh;
-  }
-
-  .who-we-are__background-video {
-    width: 100%;
-    height: 100%;
+  .clients-gallery {
+    grid-template-columns: 1fr; /* Adjust number of columns */
   }
 }

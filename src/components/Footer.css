@@ -1,0 +1,64 @@
+/* src/components/Footer.css */
+
+.footer-container {
+    background-color: #000000; /* Color de fondo del footer */
+    color: #fff; /* Color del texto */
+    padding: 40px 20px; /* Espaciado interno */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .footer-column {
+    flex: 1 1 25%; /* Distribución flexible de las columnas */
+    margin-bottom: 20px;
+  }
+  
+  .footer-logo {
+    width: 300px; /* Ancho del logo */
+  }
+  
+  .footer-title {
+    font-size: 1.5em; /* Tamaño del título */
+    margin-bottom: 10px; /* Espacio inferior del título */
+  }
+  
+  .footer-links {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 8px;
+  }
+  
+  .footer-links a {
+    color: #fff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+  }
+  
+  .footer-links a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
+  }
+  
+  .footer-text {
+    font-size: 0.9em; /* Tamaño del texto */
+  }
+  
+  /* Ejemplo de estilos para íconos de redes sociales */
+  .footer-social-icons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer-social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    color: #fff; /* Color del icono */
+    font-size: 1.5em; /* Tamaño del icono */
+  }
+  
+  .footer-social-icons a:hover {
+    opacity: 0.8; /* Opacidad al pasar el mouse */
+  }
+  

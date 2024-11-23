@@ -5,7 +5,7 @@ const Copyright = () => {
     return (
         <div className="copyright-container">
             ALLBREAKER 2024. All Rights Reserved.
-        </div>
+            </div>
     );
 };
 

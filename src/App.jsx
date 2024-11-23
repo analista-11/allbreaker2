@@ -10,6 +10,8 @@ import Portfolio from './pages/Portfolio';
 import News from './pages/News';
 import WorkWithUs from './pages/WorkWithUs';
 import FAQ from './pages/FAQ';
+import Path1Component from './pages/Path1Component'; // Asegúrate de importar el componente
+
 import './App.css';
 
 function App() {
@@ -24,6 +26,7 @@ function App() {
           <Route path="/who-we-are" element={<WhoWeAre />} />
           <Route path="/services" element={<Services />} />
           <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/path1" element={<Path1Component />} /> {/* Añadir la ruta aquí */}
           <Route path="/news" element={<News />} />
           <Route path="/work-with-us" element={<WorkWithUs />} />
           <Route path="/faq" element={<FAQ />} />
@@ -34,4 +37,3 @@ function App() {
 }
 
 export default App;
-

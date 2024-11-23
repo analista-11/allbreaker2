@@ -1,0 +1,95 @@
+.contact-page {
+    position: relative;
+    background-image: url('../assets/fc1.png'); 
+    background-size: cover; 
+    background-position: center; 
+    height: 88.5vh; /* Ocupa toda la altura de la pantalla */
+    width: 100vw; /* Ocupa toda la anchura de la pantalla */
+    display: flex; /* Centrar contenido */
+    align-items: center; /* Alinear verticalmente */
+    justify-content: baseline;
+    padding-left: 50px; /* Alinear horizontalmente */
+    overflow: hidden; /* Para asegurar que el pseudo-elemento no se desborde */
+}
+
+.contact-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Capa semitransparente negra */
+    z-index: 1;
+}
+
+.contact-wrapper {
+    border-radius: 10px;
+    position: relative;
+    z-index: 2; /* Asegura que el contenido esté por encima de la capa oscura */
+}
+
+.form-row input,
+.form-row select,
+.contact-left textarea {
+    padding: 15px;
+    margin-right: 10px; 
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s; /* Añadir sombra en foco */
+    border: none;
+    color: #000000;
+    background-color: #eeeeeed8; /* Cambia el color de fondo del formulario */
+    width: 100%; /* Ajusta el ancho del formulario */
+    max-width: 400px; /* Máximo ancho del formulario */
+}
+
+.form-row .date-input {
+    width: 30%; /* Ajusta el ancho de los inputs de fecha */
+    margin-right: 10px; /* Añadir espaciado entre inputs */
+}
+
+.contact-left textarea {
+    resize: none; /* Evita el cambio de tamaño */
+}
+
+.contact-left button {
+    padding: 10px;
+    background-color: #124479;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px; /* Bordes redondeados */
+    font-size: 18px; /* Tamaño de fuente mayor */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; /* Efecto de transformación */
+    width: 100%; 
+    max-width: 200px; /* Máximo ancho del botón */
+    margin-top: 10px; /* Espaciado superior */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+}
+
+.project-type-input {
+    width: 100%; /* Ajusta el ancho según sea necesario */
+    margin-right: 10 0px; /* Espaciado entre inputs */
+}
+
+.contact-left button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px); /* Efecto de elevación al pasar el mouse */
+}
+
+.contact-left h1 {
+    color: #ffffff; /* Cambia el color del título a blanco */
+    margin-bottom: 20px;
+    text-align: left; /* Alinear a la izquierda */
+    font-family: 'Arial', sans-serif;
+    font-size: 2em; /* Tamaño de fuente mayor */
+}
+
+.contact-left p {
+    color: #ffffff; /* Cambia el color del párrafo a blanco */
+    margin-bottom: 20px;
+    text-align: left; /* Alinear a la izquierda */
+    font-family: 'Arial', sans-serif;
+    font-size: 1em; /* Tamaño de fuente */
+}
